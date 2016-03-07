@@ -3,7 +3,7 @@ module LoggingByBean
     class InstallGenerator < Rails::Generators::Base
 
       def create_configuration
-        create_file "config/initializers/logging_by_bean.rb" do <<CONFIG_FILE_CONTENTS
+        create_file "config/initializers/logging_by_bean.rb" do <<-CONFIG_FILE_CONTENTS
 
 class ActiveSupport::Logger::SimpleFormatter
   SEVERITY_TO_TAG_MAP     = {'DEBUG'=>'meh', 'INFO'=>'fyi', 'WARN'=>'hmm', 'ERROR'=>'wtf', 'FATAL'=>'omg', 'UNKNOWN'=>'???'}
@@ -36,7 +36,8 @@ class ActiveSupport::Logger::SimpleFormatter
     return base_msg + "\n"
   end
 end
-CONFIG_FILE_CONTENTS  
+
+CONFIG_FILE_CONTENTS
 
 
       end
