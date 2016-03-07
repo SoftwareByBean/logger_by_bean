@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Sets up better logging messages in Rails apps.}
   spec.description   = %q{Logging based on Beautiful logging for Ruby on Rails 4:  https://cbpowell.wordpress.com/2013/08/09/beautiful-logging-for-ruby-on-rails-4/}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://rubygems.org"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
