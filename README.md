@@ -1,8 +1,13 @@
 # LoggingByBean
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/logging_by_bean`. To experiment with that code, run `bin/console` for an interactive prompt.
+I've grown tired of looking through Rails logs and wanted something more
+readable.  I found a nice treatment of this at https://cbpowell.wordpress.com/2013/08/09/beautiful-logging-for-ruby-on-rails-4/,
+but I wanted something that was truly fire-and-forget.  This gem handles the 
+installation of an initializer and modification of the application.rb file
+to use nicer logging.
 
-TODO: Delete this and the text above, and describe your gem
+NOTE:  This is my first gem, and I'm doing this as much to learn how to
+generate gems as anything else.  Apologies if it's clunky.
 
 ## Installation
 
@@ -20,9 +25,15 @@ Or install it yourself as:
 
     $ gem install logging_by_bean
 
+Then run the installer:
+
+    $ rails generator logging_by_bean:install
+
 ## Usage
 
-TODO: Write usage instructions here
+Once you've rebundled with the gem and run the installation, you're good to go.
+The gem consists of two side effects:  it creates a logging_by_bean.rb initializer
+file and it modifies your application.rb to switch out the default Rails logger.
 
 ## Development
 
